@@ -1,0 +1,42 @@
+{
+  "name": "nextjs-starter-prismic-blog",
+  "version": "0.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "Prismic <contact@prismic.io> (https://prismic.io)",
+  "scripts": {
+    "dev": "concurrently \"npm:next:dev\" \"npm:slicemachine\" --names \"next,slicemachine\" --prefix-colors blue,magenta",
+    "next:dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine",
+    "format": "prettier --write .",
+    "gen": "prismic-ts-codegen"
+  },
+  "dependencies": {
+    "@prismicio/client": "^7.3.1",
+    "@prismicio/next": "^1.3.6",
+    "@prismicio/react": "^2.7.3",
+    "algoliasearch": "^4.20.0",
+    "clsx": "^2.0.0",
+    "next": "^13.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-instantsearch-dom": "^6.40.4"
+  },
+  "devDependencies": {
+    "@slicemachine/adapter-next": "^0.3.21",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@types/react": "18.2.22",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.1",
+    "eslint": "8.50.0",
+    "eslint-config-next": "^13.5.2",
+    "postcss": "^8.4.30",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.4",
+    "slice-machine-ui": "^1.18.0",
+    "tailwindcss": "^3.3.3"
+  }
+}
